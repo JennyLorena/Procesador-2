@@ -1,0 +1,2 @@
+vhdl isim_temp "Alu.vhd"
+vhdl isim_temp "Test_aLu.vhd"
