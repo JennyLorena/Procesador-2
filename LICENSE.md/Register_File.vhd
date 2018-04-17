@@ -44,63 +44,25 @@ end Register_File;
 
 architecture Behavioral of Register_File is
 
-type rom_type is array (0 to 31) of std_logic_vector (31 downto 0);
-	signal reg : rom_type :=(  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"0000000a",
-												  x"0000000b",
-												  x"0000000c",
-												  x"0000000d",
-												  x"0000000e",
-												  x"0000000f",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000",
-												  x"00000000"
-												  );
+type ram_type is array (0 to 39) of std_logic_vector (31 downto 0);
+	signal reg : ram_type :=(others => x"00000000");
 
 begin
-process(rs1,rs2,reset, rd,dwr)
+process(rs1,rs2,reset, rd)
 begin
 	if(reset = '1')then
 				crs1 <= (others=>'0');
 				crs2 <= (others=>'0');
-				crd <= (others=>'0');
 			
 				reg <= (others => x"00000000");
 			else
-				crs1 <= reg(conv_integer(rs1)); 
-				crs2 <= reg(conv_integer(rs1)); 
-				crd <= reg(conv_integer(rd));
+				crs1 <= reg(conv_integer(rs1));
+				crs2 <= reg(conv_integer(rs1));
 				
-			if(rd  /= "00000")then
-					reg(conv_integer(rd)) <= dwr;
-					
-					
-				end if;
+				
 			end if;
 	
-end process;
+end process; 
 
 end Behavioral;
 

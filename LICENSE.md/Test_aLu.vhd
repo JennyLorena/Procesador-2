@@ -53,9 +53,9 @@ ARCHITECTURE behavior OF Test_aLu IS
     
 
    --Inputs
-   signal Entrada_Uc : std_logic_vector(5 downto 0) ;
-   signal Entrada_rF1 : std_logic_vector(31 downto 0) ;
-   signal Entrada_rF2 : std_logic_vector(31 downto 0) ;
+   signal Entrada_Uc : std_logic_vector(5 downto 0) := (others => '0');
+   signal Entrada_rF1 : std_logic_vector(31 downto 0) := (others => '0');
+   signal Entrada_rF2 : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
    signal dwr_aLu : std_logic_vector(31 downto 0);
