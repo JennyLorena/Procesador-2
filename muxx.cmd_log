@@ -1,0 +1,1 @@
+vhdtdtfi -prj Proyecto1 -o E:/Proyecto2/muxx.vhi -module muxx -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work muxx.vhd 

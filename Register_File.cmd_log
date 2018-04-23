@@ -1,0 +1,4 @@
+vhdtdtfi -prj Proyecto1 -o E:/Proyecto2/Register_File.vhi -module Register_File -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Register_File.vhd 
+vhdtdtfi -lib work Register_File.vhd -prj Proyecto1 -o Register_File.spl -module Register_File -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Register_File.spl E:/Proyecto2/Register_File.sym 
+vhdtdtfi -prj Proyecto1 -o E:/Proyecto2/Register_File.vhi -module Register_File -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Register_File.vhd 
