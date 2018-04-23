@@ -1,10 +1,19 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o E:/Proyecto1/Test_aLu_isim_beh.exe -prj E:/Proyecto1/Test_aLu_beh.prj work.Test_aLu 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o E:/Proyecto2/tb_Procesador_isim_beh.exe -prj E:/Proyecto2/tb_Procesador_beh.prj work.tb_Procesador 
 ISim P.20131013 (signature 0x7708f090)
-Number of CPUs detected in this system: 4
-Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
 Determining compilation order of HDL files
-Parsing VHDL file "E:/Proyecto1/Alu.vhd" into library work
-Parsing VHDL file "E:/Proyecto1/Test_aLu.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/UnidadControl.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/Sumador.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/SEU.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/Register_File.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/pC.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/nPc.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/muxx.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/InstruccionesMemoria.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/Alu.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/Conexion_Procesador.vhd" into library work
+Parsing VHDL file "E:/Proyecto2/tb_Procesador.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -12,11 +21,21 @@ Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
 Compiling package numeric_std
+Compiling package textio
+Compiling architecture behavioral of entity Sumador [sumador_default]
+Compiling architecture behavioral of entity nPc [npc_default]
+Compiling architecture behavioral of entity pC [pc_default]
+Compiling architecture behavioral of entity InstruccionesMemoria [instruccionesmemoria_default]
+Compiling architecture behavioral of entity UnidadControl [unidadcontrol_default]
+Compiling architecture behavioral of entity Register_File [register_file_default]
+Compiling architecture behavioral of entity muxx [muxx_default]
+Compiling architecture behavioral of entity SEU [seu_default]
 Compiling architecture behavioral of entity Alu [alu_default]
-Compiling architecture behavior of entity test_alu
+Compiling architecture arq_conexion_procesador of entity Conexion_Procesador [conexion_procesador_default]
+Compiling architecture behavior of entity tb_procesador
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 8 VHDL Units
-Built simulation executable E:/Proyecto1/Test_aLu_isim_beh.exe
-Fuse Memory Usage: 36812 KB
-Fuse CPU Usage: 639 ms
+Waiting for 12 sub-compilation(s) to finish...
+Compiled 27 VHDL Units
+Built simulation executable E:/Proyecto2/tb_Procesador_isim_beh.exe
+Fuse Memory Usage: 38036 KB
+Fuse CPU Usage: 2108 ms

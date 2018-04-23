@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "E:/Proyecto1/Test_aLu_isim_beh.exe" -prj "E:/Proyecto1/Test_aLu_beh.prj" "work.Test_aLu" 
+-intstyle "ise" -incremental -o "E:/Proyecto2/tb_Procesador_isim_beh.exe" -prj "E:/Proyecto2/tb_Procesador_beh.prj" "work.tb_Procesador" 

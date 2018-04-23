@@ -1,0 +1,1 @@
+vhdtdtfi -prj Proyecto1 -o E:/Proyecto2/Sumador.vhi -module Sumador -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Sumador.vhd 
